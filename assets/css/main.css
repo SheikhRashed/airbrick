@@ -37,4 +37,98 @@ button {
   display: inline-block;
   background-color: transparent;
 }
+
+body {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #021327;
+}
+
+header .navbar {
+  padding: 30px 0px;
+  padding-bottom: 12px;
+}
+
+header .navbar-toggler {
+  background-color: #fff;
+}
+
+header .navbar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0px 18px !important;
+}
+
+@media (max-width: 991px) {
+  header .navbar .nav-item {
+    padding: 12px 18px !important;
+  }
+}
+
+header .navbar .nav-link {
+  font-size: 12px;
+  line-height: 18px;
+  position: relative;
+  padding: 0px !important;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+header .navbar .nav-link::before {
+  content: "";
+  top: calc(100% + 4px);
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #0dace0;
+  transition: all 0.3s ease-out;
+}
+
+header .navbar .nav-link:hover::before {
+  opacity: 1;
+}
+
+header .navbar .nav-btn {
+  width: 140px;
+  height: 30px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 24px;
+  text-overflow: ellipsis;
+  justify-content: center;
+  transition: all 0.3 ease-in;
+  background-color: #0dace0;
+  border: 1px solid transparent;
+}
+
+header .navbar .nav-btn:hover {
+  border-color: #ffff;
+  background-color: #021327;
+}
+
+header .navbar .nav-btn:nth-child(1) {
+  margin-right: 16px;
+}
+
+header .navbar .nav-btn::before {
+  display: none;
+}
+
+header .navbar .nav-btn--sm {
+  width: 108px;
+}
 /*# sourceMappingURL=main.css.map */
