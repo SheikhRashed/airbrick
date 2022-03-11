@@ -1,0 +1,64 @@
+.banner {
+	z-index: 1;
+	height: 870px;
+	overflow: hidden;
+	margin-top: 120px;
+	position: relative;
+	@include max(767px) {
+		height: 100%;
+	}
+	&::before {
+		content: "";
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.562);
+	}
+
+	&-content {
+		text-align: center;
+		padding-top: 180px;
+		@include max(767px) {
+			padding: 68px 0px;
+		}
+		h2,
+		p {
+			color: #fff;
+		}
+
+		h2 {
+			font-size: 46px;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 24px;
+			font-family: $font-roboto;
+			@include max(767px) {
+				font-size: 32px;
+				line-height: 46px;
+			}
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 21px;
+			max-width: 680px;
+			margin: 0px auto;
+			margin-bottom: 30px;
+			@include max(767px) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&-actions {
+		.btn {
+			width: 160px;
+			height: 46px;
+			margin: 0px auto;
+			margin-bottom: 12px;
+		}
+	}
+}

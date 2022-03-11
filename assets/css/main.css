@@ -23,12 +23,16 @@ li {
 }
 
 input,
-button {
+button,
+.btn {
   border: 0px;
 }
 
-input:focus,
-button:focus {
+input:focus, input:active,
+button:focus,
+button:active,
+.btn:focus,
+.btn:active {
   outline: none;
   box-shadow: none;
 }
@@ -41,6 +45,32 @@ button {
 body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 24px;
+  text-overflow: ellipsis;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all 0.3 ease-in;
+  background-color: #0dace0;
+  border: 1px solid transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
 }
 
 header {
@@ -130,5 +160,83 @@ header .navbar .nav-btn::before {
 
 header .navbar .nav-btn--sm {
   width: 108px;
+  text-transform: uppercase;
+}
+
+.banner {
+  z-index: 1;
+  height: 870px;
+  overflow: hidden;
+  margin-top: 120px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 100%;
+  }
+}
+
+.banner::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+.banner-content {
+  text-align: center;
+  padding-top: 180px;
+}
+
+@media (max-width: 767px) {
+  .banner-content {
+    padding: 68px 0px;
+  }
+}
+
+.banner-content h2,
+.banner-content p {
+  color: #fff;
+}
+
+.banner-content h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .banner-content h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+.banner-content p {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 680px;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .banner-content p {
+    max-width: 100%;
+  }
+}
+
+.banner-actions .btn {
+  width: 160px;
+  height: 46px;
+  margin: 0px auto;
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=main.css.map */

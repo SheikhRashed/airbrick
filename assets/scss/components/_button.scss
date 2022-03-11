@@ -1,0 +1,26 @@
+.btn {
+	color: #fff;
+	display: flex;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	align-items: center;
+	border-radius: 24px;
+	text-overflow: ellipsis;
+	justify-content: center;
+	text-transform: uppercase;
+	transition: all 0.3 ease-in;
+	background-color: $blue-e0;
+
+	border: 1px solid transparent;
+	font-family: $font-roboto;
+
+	&:hover {
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+	}
+}
