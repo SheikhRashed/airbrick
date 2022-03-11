@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACtB;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACF,MAAM,EAAE,CAAC;CACT;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACF,UAAU,EAAE,IAAI;CAChB;;AAED,AAAA,KAAK;AACL,MAAM,CAAC;EACN,MAAM,EAAE,GAAG;CAKX;;AAPD,AAGC,KAHI,AAGH,MAAM;AAFR,MAAM,AAEJ,MAAM,CAAC;EACP,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CAChB;;AAGF,AAAA,MAAM,CAAC;EACN,OAAO,EAAE,YAAY;EACrB,gBAAgB,EAAE,WAAW;CAC7B",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/abstracts/_variable.scss",
+        "../scss/abstracts/_placeholder.scss",
+        "../scss/abstracts/_functions.scss",
+        "../scss/abstracts/_reset.scss",
+        "../scss/components/_button.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
