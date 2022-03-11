@@ -1,0 +1,29 @@
+.counter {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	&-shape {
+		width: 98px;
+		height: 98px;
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		border-radius: 50%;
+		margin-bottom: 8px;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #0dace0;
+	}
+	h2 {
+		color: $blue-e0;
+		font-size: 24px;
+		line-height: 34px;
+		text-transform: uppercase;
+	}
+	p {
+		color: #515151;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}

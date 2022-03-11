@@ -43,7 +43,8 @@ header {
 					transition: all 0.3s ease-out;
 				}
 
-				&:hover {
+				&:hover,
+				&.active {
 					&::before {
 						opacity: 1;
 					}
