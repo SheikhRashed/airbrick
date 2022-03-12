@@ -987,7 +987,7 @@ header .navbar .nav-btn--sm {
 
 .flow-icon::after {
   content: "";
-  top: 100%;
+  top: calc(100% + 6px);
   width: 5px;
   height: 120%;
   position: absolute;
