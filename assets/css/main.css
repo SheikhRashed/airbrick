@@ -1021,12 +1021,65 @@ header .navbar .nav-btn--sm {
   color: #686868;
 }
 
+.token {
+  position: relative;
+  padding: 90px 0px;
+}
+
+.token-heading {
+  text-align: center;
+}
+
+.token-heading h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 58px;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .token-heading h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+}
+
+.token-heading h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  height: 4px;
+  width: 8%;
+  background-color: #0dace0;
+  transform: translateX(-50%);
+}
+
+.token-heading p {
+  font-size: 21px;
+  font-weight: 700;
+  color: #343131;
+  line-height: 31px;
+}
+
+@media (max-width: 991px) {
+  .token-heading p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
 .token-progress-bar {
+  margin: 120px 0px;
   height: 6px;
   width: 100%;
-  overflow: hidden;
   border-radius: 6px;
   position: relative;
+  margin-bottom: 160px;
   background-color: #cfcfcf;
 }
 
@@ -1036,7 +1089,179 @@ header .navbar .nav-btn--sm {
   left: 0;
   width: 0%;
   height: 100%;
+  border-radius: 6px;
   background-color: #0dace0;
   transition: all 1.6s linear;
+}
+
+.token-texts {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .token-texts {
+    display: none;
+  }
+}
+
+.token-texts p {
+  color: #474747;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.token-texts p:nth-child(1), .token-texts p:nth-child(3) {
+  top: -30px;
+}
+
+.token-texts p:nth-child(1) {
+  left: 15px;
+}
+
+.token-texts p:nth-child(3) {
+  left: 32%;
+}
+
+.token-texts p:nth-child(2), .token-texts p:nth-child(4), .token-texts p:nth-child(5) {
+  bottom: -50px;
+}
+
+.token-texts p:nth-child(2) {
+  left: 18%;
+}
+
+.token-texts p:nth-child(4) {
+  left: 60%;
+}
+
+.token-texts p:nth-child(5) {
+  right: 0px;
+}
+
+.token-dots {
+  width: 100%;
+}
+
+.token-dots .dot {
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  transform: translateY(-50%);
+  border: 4px solid #cfcfcf;
+}
+
+.token-dots .dot::before {
+  content: "";
+  left: 50%;
+  height: 48px;
+  position: absolute;
+  transform: translateX(-50%);
+  border: 1px dashed #707070;
+}
+
+.token-dots .dot::after {
+  left: 50%;
+  color: #0dace0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .token-dots .dot::after {
+    font-size: 16px;
+  }
+}
+
+.token-dots .dot:nth-child(1), .token-dots .dot:nth-child(3) {
+  left: 15%;
+}
+
+.token-dots .dot:nth-child(1)::before, .token-dots .dot:nth-child(3)::before {
+  top: calc(100% + 2px);
+}
+
+.token-dots .dot:nth-child(1)::after, .token-dots .dot:nth-child(3)::after {
+  top: 70px;
+  content: "$100,000";
+}
+
+.token-dots .dot:nth-child(2) {
+  left: 30%;
+}
+
+.token-dots .dot:nth-child(2)::before {
+  bottom: calc(100% + 4px);
+}
+
+.token-dots .dot:nth-child(2)::after {
+  top: -80px;
+  content: "$215,000";
+}
+
+.token-dots .dot:nth-child(3) {
+  left: 50%;
+}
+
+.token-dots .dot:nth-child(3)::after {
+  content: "$345,000";
+}
+
+.token-dots .dot:nth-last-child(1) {
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .token-dots .dot:nth-last-child(1) {
+    right: 30px;
+  }
+}
+
+.token-dots .dot:nth-last-child(1)::after {
+  top: -80px;
+  content: "$215,000";
+}
+
+.token-dots .dot:nth-last-child(1)::before {
+  bottom: calc(100% + 4px);
+}
+
+.token-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.token-actions .btn {
+  width: 260px;
+  height: 60px;
+  margin: 0px 12px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 4px solid transparent;
+}
+
+@media (max-width: 767px) {
+  .token-actions .btn {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.token-actions .btn:hover {
+  color: #4d4d4d;
+  border-color: #4d4d4d;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

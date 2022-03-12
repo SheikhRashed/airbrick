@@ -57,6 +57,7 @@ const progressLine = document.querySelector(".progress-line")
 function showProgress() {
 	const value = progressLine.dataset.progress
 	progressLine.style.width = `${value}%`
+	progressLine.style.height = `${value}%`
 }
 
 function hideProgress() {

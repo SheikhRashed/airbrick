@@ -1,10 +1,52 @@
 .token {
+	position: relative;
+	padding: 90px 0px;
+	&-heading {
+		text-align: center;
+		h2 {
+			font-size: 44px;
+			font-weight: 700;
+			line-height: 58px;
+			position: relative;
+			margin-bottom: 40px;
+			font-family: $font-roboto;
+			text-transform: capitalize;
+			@include max(991px) {
+				font-size: 32px;
+				margin-bottom: 24px;
+				line-height: 1.2;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -8px;
+				left: 50%;
+				height: 4px;
+				width: 8%;
+				background-color: $blue-e0;
+				transform: translateX(-50%);
+			}
+		}
+
+		p {
+			font-size: 21px;
+			font-weight: 700;
+			color: #343131;
+			line-height: 31px;
+			@include max(991px) {
+				font-size: 16px;
+				line-height: 1.2;
+			}
+		}
+	}
+
 	&-progress-bar {
+		margin: 120px 0px;
 		height: 6px;
 		width: 100%;
-		overflow: hidden;
 		border-radius: 6px;
 		position: relative;
+		margin-bottom: 160px;
 		background-color: #cfcfcf;
 
 		.progress-line {
@@ -13,8 +55,168 @@
 			left: 0;
 			width: 0%;
 			height: 100%;
+			border-radius: 6px;
 			background-color: $blue-e0;
 			transition: all 1.6s linear;
+		}
+	}
+
+	&-texts {
+		width: 100%;
+		@include max(991px) {
+			display: none;
+		}
+		p {
+			color: #474747;
+			font-size: 14px;
+			line-height: 18px;
+			position: absolute;
+			text-transform: uppercase;
+
+			&:nth-child(1),
+			&:nth-child(3) {
+				top: -30px;
+			}
+
+			&:nth-child(1) {
+				left: 15px;
+			}
+
+			&:nth-child(3) {
+				left: 32%;
+			}
+
+			&:nth-child(2),
+			&:nth-child(4),
+			&:nth-child(5) {
+				bottom: -50px;
+			}
+
+			&:nth-child(2) {
+				left: 18%;
+			}
+
+			&:nth-child(4) {
+				left: 60%;
+			}
+			&:nth-child(5) {
+				right: 0px;
+			}
+		}
+	}
+
+	&-dots {
+		width: 100%;
+		.dot {
+			width: 18px;
+			height: 18px;
+			top: 50%;
+			border-radius: 50%;
+			position: absolute;
+			background-color: #fff;
+			transform: translateY(-50%);
+			border: 4px solid #cfcfcf;
+
+			&::before {
+				content: "";
+				left: 50%;
+				height: 48px;
+				position: absolute;
+				transform: translateX(-50%);
+				border: 1px dashed #707070;
+			}
+
+			&::after {
+				left: 50%;
+				color: $blue-e0;
+				font-size: 20px;
+				line-height: 20px;
+				font-weight: 700;
+				position: absolute;
+				transform: translateX(-50%);
+				@include max(767px) {
+					font-size: 16px;
+				}
+			}
+
+			&:nth-child(1),
+			&:nth-child(3) {
+				left: 15%;
+
+				&::before {
+					top: calc(100% + 2px);
+				}
+
+				&::after {
+					top: 70px;
+					content: "$100,000";
+				}
+			}
+
+			&:nth-child(2) {
+				left: 30%;
+
+				&::before {
+					bottom: calc(100% + 4px);
+				}
+
+				&::after {
+					top: -80px;
+					content: "$215,000";
+				}
+			}
+
+			&:nth-child(3) {
+				left: 50%;
+
+				&::after {
+					content: "$345,000";
+				}
+			}
+
+			&:nth-last-child(1) {
+				right: 0;
+				@include max(991px) {
+					right: 30px;
+				}
+				&::after {
+					top: -80px;
+					content: "$215,000";
+				}
+
+				&::before {
+					bottom: calc(100% + 4px);
+				}
+			}
+		}
+	}
+
+	&-actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.btn {
+			width: 260px;
+			height: 60px;
+			margin: 0px 12px;
+			font-size: 22px;
+			line-height: 32px;
+			font-weight: 700;
+			border-radius: 30px;
+			border: 4px solid transparent;
+
+			@include max(767px) {
+				width: 100%;
+				height: 48px;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+
+			&:hover {
+				color: #4d4d4d;
+				border-color: #4d4d4d;
+				background-color: transparent;
+			}
 		}
 	}
 }
