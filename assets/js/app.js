@@ -66,7 +66,6 @@ function hideProgress() {
 
 window.addEventListener("scroll", () => {
 	const sectionPosition = progressSection.getBoundingClientRect().top
-	console.log(sectionPosition)
 	const screenPosition = window.innerHeight
 
 	if (sectionPosition < screenPosition) {
@@ -74,4 +73,57 @@ window.addEventListener("scroll", () => {
 	} else {
 		hideProgress()
 	}
+})
+
+var options = {
+	series: [30, 60, 41, 7, 10],
+	toolbar: false,
+	fill: {
+		colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
+	},
+
+	legend: false,
+	chart: {
+		type: "donut",
+	},
+	// responsive: [
+	// 	{
+	// 		breakpoint: 480,
+	// 		options: {
+	// 			chart: {
+	// 				// width: 1,
+	// 			},
+	// 		},
+	// 	},
+	// ],
+}
+
+var chart = new ApexCharts(document.querySelector("#chart"), options)
+chart.render()
+
+// Slider
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 4,
+	spaceBetween: 24,
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	loopFillGroupWithBlank: true,
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		575: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		1024: {
+			slidesPerView: 4,
+		},
+	},
 })

@@ -1,0 +1,39 @@
+.charts {
+	padding: 90px 0px;
+	&-heading {
+		text-align: center;
+		margin-bottom: 60px;
+		position: relative;
+		h2 {
+			color: #3d3c3c;
+			font-size: 34px;
+			font-weight: 700;
+			line-height: 45px;
+			@include max(767px) {
+				font-size: 28px;
+			}
+			&::after {
+				content: "";
+				width: 12%;
+				height: 4px;
+				left: 50%;
+				bottom: -12px;
+				border-radius: 6px;
+				background-color: $blue-e0;
+				transform: translateX(-50%);
+				position: absolute;
+			}
+		}
+	}
+
+	&-text {
+		margin-top: 24px;
+		text-align: center;
+
+		p {
+			font-size: 16px;
+			line-height: 1.6;
+			color: #444444;
+		}
+	}
+}

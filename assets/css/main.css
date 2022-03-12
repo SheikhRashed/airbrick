@@ -217,6 +217,20 @@ body {
   margin: 0px;
 }
 
+.featured-card {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .range-slider-title {
   color: #616161;
   font-size: 16px;
@@ -1263,5 +1277,69 @@ header .navbar .nav-btn--sm {
   color: #4d4d4d;
   border-color: #4d4d4d;
   background-color: transparent;
+}
+
+.charts {
+  padding: 90px 0px;
+}
+
+.charts-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.charts-heading h2 {
+  color: #3d3c3c;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+@media (max-width: 767px) {
+  .charts-heading h2 {
+    font-size: 28px;
+  }
+}
+
+.charts-heading h2::after {
+  content: "";
+  width: 12%;
+  height: 4px;
+  left: 50%;
+  bottom: -12px;
+  border-radius: 6px;
+  background-color: #0dace0;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.charts-text {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.charts-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+.featured {
+  margin-top: 160px;
+  padding: 90px 0px;
+}
+
+.featured-title {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .featured-title {
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

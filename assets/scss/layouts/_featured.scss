@@ -1,0 +1,14 @@
+.featured {
+	margin-top: 160px;
+	padding: 90px 0px;
+
+	&-title {
+		font-size: 28px;
+		font-style: italic;
+		line-height: 1.6;
+		font-weight: 300;
+		@include max(991px) {
+			margin-bottom: 24px;
+		}
+	}
+}

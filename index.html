@@ -14,6 +14,10 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<!-- range slider -->
 		<link rel="stylesheet" href="assets/css/nouislider.min.css">
+		<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 		<!-- Main css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main.css.map" />
@@ -140,6 +144,44 @@
 			</div>
 		</div>
 		<!-- investment content end  -->
+
+
+		<!-- featured slider  -->
+		<section class="featured">
+			<div class="container">
+				<div class="featured-content row align-items-center">
+					<div class="col-lg-2">
+                          <h2 class="featured-title">Featured On:</h2>
+					</div>
+					<div class="col-lg-10">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-one.png" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-two.png" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-three.jpeg" alt="">
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="featured-card">
+									<img src="assets/images/featured/img-four.jpeg" alt="">
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 		<!-- work section start  -->
@@ -367,6 +409,32 @@
 		</section>
 		<!-- blog content end  -->
 
+		<!-- Charts Content Start  -->
+
+		<section class="charts">
+			<div class="container">
+				<div class="charts-content row">
+					<div class="col-lg-6">
+						<div class="charts-content">
+<div class="charts-heading">
+	<h2>TOKEN DISTRIBUTION ( $1,000,000)</h2>
+</div>
+							<div id="chart"></div>
+
+							<div class="charts-text">
+								<p>
+									100% of Funds raised are to be invested in the addition of properties for the portfolio or for the maintenance of the same.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Charts Content end  -->
+
+
 		<!-- featured article start  -->
 		<section class="blog blog-feature">
 			<div class="container">
@@ -585,6 +653,8 @@
 		<script src="assets/js/jquery.waypoints.min.js"></script>
 		<script src="assets/js/jquery.countup.js"></script>
 		<script src="assets/js/nouislider.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script src="assets/js/app.js"></script>
 
 	</body>
