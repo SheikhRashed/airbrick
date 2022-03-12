@@ -49,3 +49,28 @@ inLength.noUiSlider.on("update", function (values, handle) {
 inPercent.noUiSlider.on("update", function (values, handle) {
 	inPercentOutput.innerHTML = Math.floor(values[handle])
 })
+
+// Progress token
+const progressSection = document.querySelector(".token")
+const progressLine = document.querySelector(".progress-line")
+
+function showProgress() {
+	const value = progressLine.dataset.progress
+	progressLine.style.width = `${value}%`
+}
+
+function hideProgress() {
+	progressLine.style.width = 0
+}
+
+window.addEventListener("scroll", () => {
+	const sectionPosition = progressSection.getBoundingClientRect().top
+	console.log(sectionPosition)
+	const screenPosition = window.innerHeight
+
+	if (sectionPosition < screenPosition) {
+		showProgress()
+	} else {
+		hideProgress()
+	}
+})

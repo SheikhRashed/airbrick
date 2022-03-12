@@ -1,0 +1,20 @@
+.token {
+	&-progress-bar {
+		height: 6px;
+		width: 100%;
+		overflow: hidden;
+		border-radius: 6px;
+		position: relative;
+		background-color: #cfcfcf;
+
+		.progress-line {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			background-color: $blue-e0;
+			transition: all 1.6s linear;
+		}
+	}
+}
