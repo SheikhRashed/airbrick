@@ -758,4 +758,55 @@ header .navbar .nav-btn--sm {
   line-height: inherit;
   transform: all 0.4s linear;
 }
+
+.callto {
+  padding: 90px 0px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .callto {
+    padding: 60px 0px;
+  }
+}
+
+.callto-content {
+  text-align: center;
+}
+
+.callto-content p {
+  font-size: 18px;
+  color: #686868;
+  margin: 0px auto;
+  line-height: 30px;
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  .callto-content p {
+    max-width: 100%;
+  }
+}
+
+.callto-content .btn {
+  font-size: 24px;
+  line-height: 38px;
+  width: 415px;
+  height: 72px;
+  border-radius: 36px;
+  margin: 0px auto;
+  border: 0px;
+}
+
+@media (max-width: 767px) {
+  .callto-content .btn {
+    width: 320px;
+    height: 60px;
+  }
+}
+
+.callto-content .btn:hover {
+  background-color: #0dace0;
+}
 /*# sourceMappingURL=main.css.map */

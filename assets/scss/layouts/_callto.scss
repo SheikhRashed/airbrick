@@ -1,0 +1,39 @@
+.callto {
+	padding: 90px 0px;
+	position: relative;
+
+	@include max(767px) {
+		padding: 60px 0px;
+	}
+	&-content {
+		text-align: center;
+		p {
+			font-size: 18px;
+			color: #686868;
+			margin: 0px auto;
+			line-height: 30px;
+			max-width: 680px;
+			margin-bottom: 24px;
+			@include max(767px) {
+				max-width: 100%;
+			}
+		}
+
+		.btn {
+			font-size: 24px;
+			line-height: 38px;
+			width: 415px;
+			height: 72px;
+			border-radius: 36px;
+			margin: 0px auto;
+			border: 0px;
+			@include max(767px) {
+				width: 320px;
+				height: 60px;
+			}
+			&:hover {
+				background-color: $blue-e0;
+			}
+		}
+	}
+}
