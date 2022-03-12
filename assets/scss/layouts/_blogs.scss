@@ -159,4 +159,122 @@
 			}
 		}
 	}
+
+	&-portfolio {
+		padding: 120px 0px;
+		padding-bottom: 240px;
+		background-color: #f8f8f8;
+		@include max(1024px) {
+			padding: 90px 0px;
+		}
+		.blog {
+			&-content {
+				align-items: center;
+				@include max(1024px) {
+					flex-direction: column;
+				}
+			}
+
+			&-text {
+				@include max(1024px) {
+					order: 2;
+					text-align: center;
+				}
+
+				@include max(991px) {
+					text-align: left;
+				}
+				p {
+					margin-bottom: 20px;
+				}
+
+				.redirect {
+					font-size: 21px;
+					line-height: 31px;
+					color: #7e7e7e;
+					font-weight: 400;
+					margin-bottom: 30px;
+					text-transform: lowercase;
+					overflow: hidden;
+					position: relative;
+					padding: 12px 40px;
+					border-radius: 26px;
+					background-color: #fff;
+					display: flex;
+					align-items: center;
+					box-shadow: -6px 23px 64px -31px rgba(0, 0, 0, 0.63);
+					-webkit-box-shadow: -6px 23px 64px -31px rgba(0, 0, 0, 0.63);
+					-moz-box-shadow: -6px 23px 64px -31px rgba(0, 0, 0, 0.63);
+					@include max(1024px) {
+						font-size: 16px;
+						width: 50%;
+						margin: 24px auto;
+					}
+
+					@include max(991px) {
+						width: 100%;
+					}
+					span {
+						margin: 0;
+						transform: translateX(-6px);
+					}
+					&:hover {
+						span {
+							transform: translateX(-2px);
+						}
+					}
+				}
+
+				.btn {
+					width: 312px;
+					border-radius: 70px;
+					height: 70px;
+					@include max(1024px) {
+						width: 280px;
+						margin: auto;
+					}
+					@include max(991px) {
+						margin: 0px;
+					}
+				}
+			}
+
+			&-img {
+				margin: 0;
+				margin-left: 120px;
+				overflow: visible;
+				@include max(1200px) {
+					margin-left: 60px;
+				}
+				@include max(1024px) {
+					order: 1;
+					margin: 0px;
+					height: auto;
+					margin-bottom: 48px;
+				}
+			}
+
+			&-icon {
+				cursor: pointer;
+				color: #484848;
+				font-size: 18px;
+				line-height: 28px;
+				font-weight: 700;
+				left: auto;
+				right: 125px;
+				width: 305px;
+				height: 105px;
+				box-shadow: none;
+				border-radius: 0px;
+				text-transform: uppercase;
+				@include max(1024px) {
+					height: 60px;
+					top: calc(100% - 36px);
+				}
+				span {
+					margin-left: 12px;
+				}
+			}
+		}
+	}
 }
