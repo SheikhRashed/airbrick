@@ -1,4 +1,7 @@
 .feature {
 	padding: 90px 0px;
 	position: relative;
+	@include max(991px) {
+		padding-bottom: 0px;
+	}
 }

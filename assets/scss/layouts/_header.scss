@@ -8,7 +8,9 @@ header {
 	.navbar {
 		padding: 30px 0px;
 		padding-bottom: 12px;
-
+		@include max(991px) {
+			padding: 12px 0px;
+		}
 		&-toggler {
 			background-color: #fff;
 		}

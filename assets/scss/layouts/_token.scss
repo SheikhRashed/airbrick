@@ -1,6 +1,9 @@
 .token {
 	position: relative;
 	padding: 90px 0px;
+	@include max(991px) {
+		padding-bottom: 0px;
+	}
 	&-heading {
 		text-align: center;
 		h2 {
@@ -57,7 +60,7 @@
 			height: 100%;
 			border-radius: 6px;
 			background-color: $blue-e0;
-			transition: all 1.6s linear;
+			transition: all 2.6s linear;
 		}
 	}
 

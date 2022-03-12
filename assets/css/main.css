@@ -236,7 +236,8 @@ body {
   font-size: 16px;
   line-height: 25px;
   text-align: center;
-  margin-bottom: 18px;
+  min-height: 60px;
+  overflow: hidden;
 }
 
 .range-slider-wrapper .output {
@@ -287,10 +288,6 @@ body {
   background-color: #0dace0;
 }
 
-.noUi-handle-lower {
-  display: none;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -303,6 +300,12 @@ header {
 header .navbar {
   padding: 30px 0px;
   padding-bottom: 12px;
+}
+
+@media (max-width: 991px) {
+  header .navbar {
+    padding: 12px 0px;
+  }
 }
 
 header .navbar-toggler {
@@ -386,6 +389,12 @@ header .navbar .nav-btn--sm {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .feature {
+    padding-bottom: 0px;
+  }
+}
+
 .banner {
   z-index: 1;
   height: 870px;
@@ -396,6 +405,13 @@ header .navbar .nav-btn--sm {
 @media (max-width: 767px) {
   .banner {
     height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    height: 100%;
+    margin-top: 100px;
   }
 }
 
@@ -413,6 +429,12 @@ header .navbar .nav-btn--sm {
 .banner-content {
   text-align: center;
   padding-top: 180px;
+}
+
+@media (max-width: 991px) {
+  .banner-content {
+    padding: 90px 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -465,6 +487,12 @@ header .navbar .nav-btn--sm {
 .blog {
   position: relative;
   padding: 90px 0px;
+}
+
+@media (max-width: 991px) {
+  .blog {
+    padding-bottom: 0px;
+  }
 }
 
 .blog-content {
@@ -682,6 +710,7 @@ header .navbar .nav-btn--sm {
 @media (max-width: 1024px) {
   .blog-portfolio .blog-text {
     order: 2;
+    width: 100%;
     text-align: center;
   }
 }
@@ -795,6 +824,7 @@ header .navbar .nav-btn--sm {
 
 @media (max-width: 1024px) {
   .blog-portfolio .blog-icon {
+    right: 0px;
     height: 60px;
     top: calc(100% - 36px);
   }
@@ -805,16 +835,9 @@ header .navbar .nav-btn--sm {
 }
 
 .work {
-  padding: 90px 0px;
-  padding-top: 320px;
+  padding: 120px 0px;
   position: relative;
   background-color: #f8f8f8;
-}
-
-@media (max-width: 1200px) {
-  .work {
-    padding-top: 90px;
-  }
 }
 
 .work-heading {
@@ -882,7 +905,6 @@ header .navbar .nav-btn--sm {
 @media (max-width: 1200px) {
   .investment {
     padding: 90px 0px;
-    padding-bottom: 0px;
   }
 }
 
@@ -1087,6 +1109,11 @@ header .navbar .nav-btn--sm {
   }
 }
 
+.flow:hover .flow-icon {
+  color: #0dace0;
+  border-color: #0dace0;
+}
+
 .flow-right {
   grid-template-columns: 120px 480px;
 }
@@ -1144,6 +1171,7 @@ header .navbar .nav-btn--sm {
   justify-content: center;
   border: 7px solid #bfbfbf;
   background-color: #fff;
+  transition: all 0.2s ease-in-out;
 }
 
 .flow-icon::after {
@@ -1182,9 +1210,23 @@ header .navbar .nav-btn--sm {
   color: #686868;
 }
 
+@media (max-width: 575px) {
+  .flow-text p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+}
+
 .token {
   position: relative;
   padding: 90px 0px;
+}
+
+@media (max-width: 991px) {
+  .token {
+    padding-bottom: 0px;
+  }
 }
 
 .token-heading {
@@ -1252,7 +1294,7 @@ header .navbar .nav-btn--sm {
   height: 100%;
   border-radius: 6px;
   background-color: #0dace0;
-  transition: all 1.6s linear;
+  transition: all 2.6s linear;
 }
 
 .token-texts {
@@ -1475,6 +1517,12 @@ header .navbar .nav-btn--sm {
 .featured {
   margin-top: 160px;
   padding: 90px 0px;
+}
+
+@media (max-width: 1200px) {
+  .featured {
+    margin: 0px;
+  }
 }
 
 .featured-title {

@@ -3,7 +3,6 @@
 	background-color: #f8f8f8;
 	@include max(1200px) {
 		padding: 90px 0px;
-		padding-bottom: 0px;
 	}
 	&-content {
 		top: -50%;

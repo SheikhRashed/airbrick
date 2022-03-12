@@ -6,6 +6,10 @@
 	@include max(767px) {
 		height: 100%;
 	}
+	@include max(991px) {
+		height: 100%;
+		margin-top: 100px;
+	}
 	&::before {
 		content: "";
 		top: 0;
@@ -20,6 +24,9 @@
 	&-content {
 		text-align: center;
 		padding-top: 180px;
+		@include max(991px) {
+			padding: 90px 0px;
+		}
 		@include max(767px) {
 			padding: 68px 0px;
 		}

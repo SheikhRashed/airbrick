@@ -1,6 +1,9 @@
 .blog {
 	position: relative;
 	padding: 90px 0px;
+	@include max(991px) {
+		padding-bottom: 0px;
+	}
 	&-content {
 		display: flex;
 		transition: all 0.3s ease-in;
@@ -178,6 +181,7 @@
 			&-text {
 				@include max(1024px) {
 					order: 2;
+					width: 100%;
 					text-align: center;
 				}
 
@@ -268,6 +272,7 @@
 				border-radius: 0px;
 				text-transform: uppercase;
 				@include max(1024px) {
+					right: 0px;
 					height: 60px;
 					top: calc(100% - 36px);
 				}

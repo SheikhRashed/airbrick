@@ -2,6 +2,10 @@
 	margin-top: 160px;
 	padding: 90px 0px;
 
+	@include max(1200px) {
+		margin: 0px;
+	}
+
 	&-title {
 		font-size: 28px;
 		font-style: italic;

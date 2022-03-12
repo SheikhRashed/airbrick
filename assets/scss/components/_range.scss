@@ -4,7 +4,8 @@
 		font-size: 16px;
 		line-height: 25px;
 		text-align: center;
-		margin-bottom: 18px;
+		min-height: 60px;
+		overflow: hidden;
 	}
 
 	&-wrapper {
@@ -56,6 +57,6 @@
 	background-color: $blue-e0;
 }
 
-.noUi-handle-lower {
-	display: none;
-}
+// .noUi-handle-lower {
+// 	display: none;
+// }

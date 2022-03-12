@@ -12,8 +12,9 @@ let inLengthOutput = document.querySelector(".output-length span")
 let inPercentOutput = document.querySelector(".output-percent span")
 
 noUiSlider.create(inAmount, {
-	start: [0, 0],
-	connect: true,
+	start: 0,
+	connect: "lower",
+	// connect: true,
 	range: {
 		min: 0,
 		max: 50000,
@@ -21,8 +22,9 @@ noUiSlider.create(inAmount, {
 })
 
 noUiSlider.create(inLength, {
-	start: [0, 0],
-	connect: true,
+	start: 0,
+	connect: "lower",
+	// connect: true,
 	range: {
 		min: 1,
 		max: 60,
@@ -30,8 +32,10 @@ noUiSlider.create(inLength, {
 })
 
 noUiSlider.create(inPercent, {
-	start: [0, 0],
-	connect: true,
+	start: 0,
+	connect: "lower",
+	// connect: true,
+
 	range: {
 		min: 1,
 		max: 100,

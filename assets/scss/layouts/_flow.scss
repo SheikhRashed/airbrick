@@ -57,6 +57,14 @@
 	@include max(575px) {
 		grid-auto-rows: auto;
 	}
+
+	&:hover {
+		.flow-icon {
+			color: $blue-e0;
+			border-color: $blue-e0;
+		}
+	}
+
 	&-right {
 		grid-template-columns: 120px 480px;
 		@include max(1200px) {
@@ -97,6 +105,7 @@
 		justify-content: center;
 		border: 7px solid #bfbfbf;
 		background-color: #fff;
+		transition: all 0.2s ease-in-out;
 		&::after {
 			content: "";
 			top: calc(100% + 6px);
@@ -127,6 +136,11 @@
 			font-size: 20px;
 			line-height: 30px;
 			color: #686868;
+			@include max(575px) {
+				font-size: 16px;
+				line-height: 1.4;
+				margin-bottom: 24px;
+			}
 		}
 	}
 }
