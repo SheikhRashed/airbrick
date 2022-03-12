@@ -1,6 +1,14 @@
 "use strict"
 
-// Import
+AOS.init({
+	offset: 180,
+	delay: 0,
+	duration: 800,
+	easing: "ease",
+	once: true,
+	mirror: false,
+	anchorPlacement: "top-bottom",
+})
 
 $(".count").countUp()
 
