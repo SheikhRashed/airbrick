@@ -1,0 +1,132 @@
+.how {
+	position: relative;
+	padding: 90px 0px;
+
+	&-heading {
+		text-align: center;
+		margin-bottom: 120px;
+		@include max(767px) {
+			margin-bottom: 90px;
+		}
+		h2 {
+			position: relative;
+			color: #3d3c3c;
+			font-size: 38px;
+			font-weight: 700;
+			line-height: 48px;
+			text-transform: capitalize;
+
+			&::after {
+				content: "";
+				top: -12px;
+				left: 50%;
+				width: 6%;
+				height: 4px;
+				border-radius: 4px;
+				position: absolute;
+				background-color: $blue-e0;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	.col-lg-6 {
+		&:nth-last-child(1) {
+			.flow {
+				&-icon {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.flow {
+	display: grid;
+	grid-auto-rows: 240px;
+	gap: 60px;
+	@include max(1200px) {
+		gap: 24px;
+	}
+
+	@include max(991px) {
+		grid-auto-rows: 320px;
+	}
+	@include max(575px) {
+		grid-auto-rows: auto;
+	}
+	&-right {
+		grid-template-columns: 120px 480px;
+		@include max(1200px) {
+			grid-template-columns: 120px 1fr;
+		}
+		@include max(575px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&-left {
+		text-align: right;
+		grid-template-columns: 480px 120px;
+		@include max(1200px) {
+			text-align: left;
+			grid-template-columns: 120px 1fr;
+		}
+		@include max(575px) {
+			grid-template-columns: 1fr;
+		}
+		.flow-icon {
+			order: 2;
+			@include max(1200px) {
+				order: 0;
+			}
+		}
+	}
+
+	&-icon {
+		width: 120px;
+		height: 120px;
+		display: flex;
+		flex-shrink: 0;
+		z-index: 9;
+		color: #bfbfbf;
+		position: relative;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+		border: 7px solid #bfbfbf;
+		background-color: #fff;
+		&::after {
+			content: "";
+			top: 100%;
+			width: 5px;
+			height: 120%;
+			position: absolute;
+			background-color: #ebebeb;
+			z-index: -1;
+			@include max(991px) {
+				height: 200%;
+			}
+			@include max(575px) {
+				display: none;
+			}
+		}
+	}
+
+	&-text {
+		h2 {
+			font-size: 24px;
+			color: #3d3c3c;
+			font-weight: 700;
+			line-height: 40px;
+			margin-bottom: 16px;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 30px;
+			color: #686868;
+		}
+	}
+}
