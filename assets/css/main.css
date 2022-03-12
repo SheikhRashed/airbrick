@@ -192,6 +192,31 @@ body {
   transform: translateX(12px);
 }
 
+.article-card-two {
+  height: 100%;
+  border: 2px solid #fff;
+}
+
+.article-card-two .article-card-number {
+  border: 3px solid #fff;
+  background-color: #223043;
+}
+
+.article-card-two .article-card-number h6 {
+  color: #fff;
+}
+
+.article-card-two .article-card-title {
+  color: #fff;
+}
+
+.article-card-two blockquote p {
+  color: #fff;
+  max-height: 100%;
+  height: auto;
+  margin: 0px;
+}
+
 .range-slider-title {
   color: #616161;
   font-size: 16px;
@@ -808,5 +833,31 @@ header .navbar .nav-btn--sm {
 
 .callto-content .btn:hover {
   background-color: #0dace0;
+}
+
+.finance {
+  padding: 90px 0px;
+  position: relative;
+  background-color: #223043;
+}
+
+.finance-heading {
+  color: #fff;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.finance-heading h2 {
+  font-size: 38px;
+  line-height: 48px;
+  max-width: 720px;
+  margin: 0px auto;
+}
+
+@media (max-width: 767px) {
+  .finance-heading h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 }
 /*# sourceMappingURL=main.css.map */

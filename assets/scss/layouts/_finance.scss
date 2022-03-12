@@ -1,0 +1,22 @@
+.finance {
+	padding: 90px 0px;
+	position: relative;
+	background-color: #223043;
+
+	&-heading {
+		color: #fff;
+		margin-bottom: 80px;
+		text-align: center;
+
+		h2 {
+			font-size: 38px;
+			line-height: 48px;
+			max-width: 720px;
+			margin: 0px auto;
+			@include max(767px) {
+				font-size: 28px;
+				line-height: 1.2;
+			}
+		}
+	}
+}

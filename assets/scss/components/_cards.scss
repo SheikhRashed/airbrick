@@ -76,4 +76,31 @@
 			}
 		}
 	}
+
+	&-two {
+		height: 100%;
+		border: 2px solid #fff;
+		.article-card {
+			&-number {
+				border: 3px solid #fff;
+				background-color: #223043;
+				h6 {
+					color: #fff;
+				}
+			}
+
+			&-title {
+				color: #fff;
+			}
+		}
+
+		blockquote {
+			p {
+				color: #fff;
+				max-height: 100%;
+				height: auto;
+				margin: 0px;
+			}
+		}
+	}
 }
