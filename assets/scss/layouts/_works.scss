@@ -1,7 +1,11 @@
 .work {
 	padding: 90px 0px;
+	padding-top: 320px;
 	position: relative;
 	background-color: #f8f8f8;
+	@include max(1200px) {
+		padding-top: 90px;
+	}
 	&-heading {
 		margin-bottom: 60px;
 		text-align: center;

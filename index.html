@@ -12,6 +12,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!-- range slider -->
+		<link rel="stylesheet" href="assets/css/nouislider.min.css">
 		<!-- Main css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/main.css.map" />
@@ -71,6 +73,75 @@
 			</div>
 		</section>
 		<!-- banner section end  -->
+
+		<!-- investment content start  -->
+		<div class="investment">
+			<div class="container">
+				<div class="investment-content">
+					<div class="investment-range row gx-5 gy-4 gy-lg-0">
+						<div class="col-lg-4 col-md-6">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Investment Amount
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output">
+									$<span></span>
+								</div>
+								<div id="inamount"></div> 
+								<div class="range-slider-minmax">
+									<span>$1000</span>
+									<span>$50,000</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Length of Investment
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output output-length">
+								  <span></span> Months
+								</div>
+								<div id="inLength"></div> 
+								<div class="range-slider-minmax">
+									<span>1 month</span>
+									<span>60 Month</span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+						<div class="range-slider">
+							<h2 class="range-slider-title">
+								Receive an Approx. 65% APR
+							
+							</h2>
+							<div class="range-slider-wrapper">
+								<div class="output output-percent">
+									<span></span>%
+								</div>
+								<div id="inPercent"></div> 
+								<div class="range-slider-minmax">
+									<span>30%</span>
+									<span>100%</span>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="investment-initial">
+						<span>Initial Investment & Returns</span>
+						<h6>$<span class="count">36610.28</span> </h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- investment content end  -->
+
+
 
 		<!-- work section start  -->
 		<section class="work">
@@ -288,6 +359,7 @@
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/jquery.waypoints.min.js"></script>
 		<script src="assets/js/jquery.countup.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
 		<script src="assets/js/app.js"></script>
 
 	</body>

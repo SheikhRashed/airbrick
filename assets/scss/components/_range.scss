@@ -1,0 +1,61 @@
+.range-slider {
+	&-title {
+		color: #616161;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		margin-bottom: 18px;
+	}
+
+	&-wrapper {
+		.output {
+			color: $blue-e0;
+			font-size: 18px;
+			line-height: 27px;
+			margin-bottom: 8px;
+		}
+	}
+
+	&-minmax {
+		display: flex;
+		margin-top: 8px;
+		align-items: center;
+		justify-content: space-between;
+		span {
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+}
+
+.noUi-horizontal {
+	height: 18px;
+	border: 0px;
+	border-radius: 8px;
+	background-color: #e1e1e1;
+
+	.noUi-handle {
+		top: calc(50% - 3px);
+		right: -14px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		border: 6px solid $blue-e0;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+}
+.noUi-connects {
+	border-radius: 8px;
+}
+.noUi-connect {
+	border-radius: 8px;
+	background-color: $blue-e0;
+}
+
+.noUi-handle-lower {
+	display: none;
+}
