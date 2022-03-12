@@ -490,12 +490,6 @@ header .navbar .nav-btn--sm {
   padding: 90px 0px;
 }
 
-@media (max-width: 991px) {
-  .blog {
-    padding-bottom: 0px;
-  }
-}
-
 .blog-content {
   display: flex;
   transition: all 0.3s ease-in;

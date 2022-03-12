@@ -1,9 +1,7 @@
 .blog {
 	position: relative;
 	padding: 90px 0px;
-	@include max(991px) {
-		padding-bottom: 0px;
-	}
+
 	&-content {
 		display: flex;
 		transition: all 0.3s ease-in;
