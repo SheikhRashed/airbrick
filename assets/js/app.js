@@ -40,7 +40,7 @@ noUiSlider.create(inLength, {
 })
 
 noUiSlider.create(inPercent, {
-	start: 0,
+	start: 30,
 	connect: "lower",
 	// connect: true,
 
@@ -87,8 +87,10 @@ window.addEventListener("scroll", () => {
 	}
 })
 
-var options = {
-	series: [30, 60, 41, 7, 10],
+var tokenOption = {
+	colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
+	series: [20, 65, 10, 5],
+	labels: ["AIRBRICK", "TOKEN SALES", "MARKETING & ADVISORS", "LIQUIDITY"],
 	toolbar: false,
 	fill: {
 		colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
@@ -98,20 +100,28 @@ var options = {
 	chart: {
 		type: "donut",
 	},
-	// responsive: [
-	// 	{
-	// 		breakpoint: 480,
-	// 		options: {
-	// 			chart: {
-	// 				// width: 1,
-	// 			},
-	// 		},
-	// 	},
-	// ],
 }
 
-var chart = new ApexCharts(document.querySelector("#chart"), options)
-chart.render()
+var profitOption = {
+	colors: ["#2E3C4C", "#0CA8DB", "#1C4861"],
+	series: [40, 12, 40],
+	labels: ["AIRBRICK FINANCE", "AIRBRICK TREASURE", "INVESTORS"],
+	toolbar: false,
+	fill: {
+		colors: ["#2E3C4C", "#0CA8DB", "#1C4861"],
+	},
+
+	legend: false,
+	chart: {
+		type: "donut",
+	},
+}
+
+var tokenChart = new ApexCharts(document.querySelector("#tokenChart"), tokenOption)
+var profitChart = new ApexCharts(document.querySelector("#profitChart"), profitOption)
+
+tokenChart.render()
+profitChart.render()
 
 // Slider
 var swiper = new Swiper(".mySwiper", {

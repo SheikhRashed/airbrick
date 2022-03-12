@@ -6,9 +6,9 @@
 		position: relative;
 		h2 {
 			color: #3d3c3c;
-			font-size: 34px;
+			font-size: 28px;
 			font-weight: 700;
-			line-height: 45px;
+			line-height: 1.6;
 			@include max(767px) {
 				font-size: 28px;
 			}

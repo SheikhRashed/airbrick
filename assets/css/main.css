@@ -43,6 +43,7 @@ a {
 }
 
 button {
+  overflow-x: hidden;
   display: inline-block;
   background-color: transparent;
 }
@@ -1047,6 +1048,7 @@ header .navbar .nav-btn--sm {
 .how {
   position: relative;
   padding: 90px 0px;
+  overflow: hidden;
 }
 
 .how-heading {
@@ -1480,9 +1482,9 @@ header .navbar .nav-btn--sm {
 
 .charts-heading h2 {
   color: #3d3c3c;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 1.6;
 }
 
 @media (max-width: 767px) {
