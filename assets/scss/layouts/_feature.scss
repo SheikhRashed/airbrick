@@ -1,7 +1,9 @@
 .feature {
 	padding: 90px 0px;
 	position: relative;
+	padding-top: 0px;
 	@include max(991px) {
+		padding-top: 60px;
 		padding-bottom: 0px;
 	}
 }
