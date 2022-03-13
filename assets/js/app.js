@@ -87,58 +87,103 @@ window.addEventListener("scroll", () => {
 	}
 })
 
-var tokenOption = {
-	colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
-	series: [20, 65, 10, 5],
-	labels: ["AIRBRICK", "TOKEN SALES", "MARKETING & ADVISORS", "LIQUIDITY"],
-	toolbar: false,
-	fill: {
-		colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
-	},
 
-	legend: {
-		formatter: function(val, opts) {
-		  return val + " - " + opts.w.globals.series[opts.seriesIndex]
+// chart start
+{
+	const ctx = document.getElementById('tokenChart');
+	const myChart = new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+			labels: ['TOKEN SALES', 'AIRBRICK TEAM', 'LIQUIDITY', 'MARKETING & ADVISORS'],
+			datasets: [{
+				label: '# of Votes',
+				data: [65, 20, 5, 10],
+				backgroundColor: [
+					'#045A7C',
+					'#848494',
+					'#1C4861',
+					'#357C9C',
+				],
+				borderWidth: 0
+			}]
 		},
-		horizontalAlign: 'center', 
-		floating: false,
-		position: 'top',
-	},
-
-
-	chart: {
-		type: "donut",
-	},
+		options: {
+			scales: {
+				y: {
+					beginAtZero: true
+				}
+			},
+			layout: {
+				padding: 100
+			},
+			responsive: true,
+			maintainAspectRatio: true,
+			legend: {
+				display: false,
+			},
+			pieceLabel: {
+				render: function(d) { return  d.percentage + "% " + d.label  },
+				fontColor: '#3D3C3C',
+				fontSize: 14,
+				fontFamily: 'Poppins',
+				fontStyle: 'bold',
+				position: 'outside',
+				segment: true,
+				segmentColor: '#F6CD9D'
+			}
+		}
+	});
+		 
 }
 
-var profitOption = {
-	colors: ["#2E3C4C", "#0CA8DB", "#1C4861"],
-	series: [40, 12, 40],
-	labels: ["AIRBRICK FINANCE", "AIRBRICK TREASURE", "INVESTORS"],
-	toolbar: false,
-	fill: {
-		colors: ["#2E3C4C", "#0CA8DB", "#1C4861"],
-	},
-
-	legend: {
-		formatter: function(val, opts) {
-		  return val + " - " + opts.w.globals.series[opts.seriesIndex]
+// chart 2
+{
+	const ctx = document.getElementById('profitChart');
+	
+	const myChart = new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+			labels: ['AIRBRICK TREASURE', 'INVESTORS', 'AIRBRICK FINANCE'],
+			datasets: [{
+				label: '# of Votes',
+				data: [20, 40, 40],
+				backgroundColor: [
+					'#0CA8DB',
+					'#1C4861',
+					'#2E3C4C',
+				],
+				borderWidth: 0
+			}]
 		},
-		horizontalAlign: 'center', 
-		floating: false,
-		position: 'top',
-	},
-
-	chart: {
-		type: "donut",
-	},
+		options: {
+			scales: {
+				y: {
+					beginAtZero: true
+				}
+			},
+			layout: {
+				padding: 100
+			},
+			responsive: true,
+			maintainAspectRatio: true,
+			legend: {
+				display: false,
+			},
+			pieceLabel: {
+				render: function(d) { return  d.percentage + "% " + d.label  },
+				fontColor: '#3D3C3C',
+				fontSize: 14,
+				fontFamily: 'Poppins',
+				fontStyle: 'bold',
+				position: 'outside',
+				segment: true,
+				segmentColor: '#F6CD9D'
+			}
+		}
+	});
+		 
 }
-
-var tokenChart = new ApexCharts(document.querySelector("#tokenChart"), tokenOption)
-var profitChart = new ApexCharts(document.querySelector("#profitChart"), profitOption)
-
-tokenChart.render()
-profitChart.render()
+// chart end
 
 // Slider
 var swiper = new Swiper(".mySwiper", {
