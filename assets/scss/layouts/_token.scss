@@ -51,7 +51,17 @@
 		position: relative;
 		margin-bottom: 160px;
 		background-color: #cfcfcf;
+		@include max(991px) {
+			margin: 400px 0px;
+			transform: rotate(90deg);
+		}
+		@include max(767px) {
+			margin: 315px 0px;
+		}
 
+		@include max(425px) {
+			margin: 250px 0px;
+		}
 		.progress-line {
 			position: absolute;
 			top: 0;
@@ -66,27 +76,77 @@
 
 	&-texts {
 		width: 100%;
-		@include max(991px) {
-			display: none;
-		}
+
 		p {
+			margin: 0;
 			color: #474747;
 			font-size: 14px;
 			line-height: 18px;
 			position: absolute;
 			text-transform: uppercase;
 
+			@include max(991px) {
+				transform: rotate(-90deg);
+			}
+
+			@include max(425px) {
+				max-width: 180px;
+				text-align: center;
+			}
+
 			&:nth-child(1),
 			&:nth-child(3) {
 				top: -30px;
+				@include max(991px) {
+					top: 115px;
+				}
+
+				@include max(425px) {
+					top: 100px;
+				}
+
+				@include max(375px) {
+					top: 75px;
+				}
 			}
 
 			&:nth-child(1) {
 				left: 15px;
+				@include max(991px) {
+					left: -15px;
+				}
+
+				@include max(767px) {
+					left: -45px;
+				}
+
+				@include max(480px) {
+					left: -55px;
+				}
+
+				@include max(375px) {
+					left: -62px;
+				}
 			}
 
 			&:nth-child(3) {
 				left: 32%;
+
+				@include max(767px) {
+					left: 25%;
+				}
+
+				@include max(480px) {
+					left: 22%;
+				}
+
+				@include max(425px) {
+					left: 20%;
+				}
+
+				@include max(375px) {
+					left: 18%;
+				}
 			}
 
 			&:nth-child(2),
@@ -97,13 +157,56 @@
 
 			&:nth-child(2) {
 				left: 18%;
+				@include max(991px) {
+					left: 12%;
+					bottom: 125px;
+				}
+
+				@include max(767px) {
+					left: 15%;
+				}
+
+				@include max(425px) {
+					left: 20%;
+					bottom: 85px;
+				}
 			}
 
 			&:nth-child(4) {
 				left: 60%;
+				@include max(991px) {
+					left: 42%;
+					bottom: -125px;
+				}
+				@include max(767px) {
+					left: 38%;
+				}
+
+				@include max(480px) {
+					left: 36%;
+				}
+
+				@include max(425px) {
+					left: 40%;
+				}
+				@include max(375px) {
+					bottom: -108px;
+				}
 			}
 			&:nth-child(5) {
 				right: 0px;
+
+				@include max(991px) {
+					right: -40px;
+					bottom: 125px;
+				}
+
+				@include max(425px) {
+					bottom: 100px;
+				}
+				@include max(375px) {
+					bottom: 85px;
+				}
 			}
 		}
 	}
@@ -137,6 +240,7 @@
 				font-weight: 700;
 				position: absolute;
 				transform: translateX(-50%);
+
 				@include max(767px) {
 					font-size: 16px;
 				}
@@ -153,6 +257,25 @@
 				&::after {
 					top: 70px;
 					content: "$100,000";
+					@include max(991px) {
+						transform: rotate(-90deg) translate(-45px, -45px);
+					}
+					@include max(425px) {
+						transform: rotate(-90deg) translate(-45px, -40px);
+					}
+				}
+			}
+
+			&:nth-child(2),
+			&:nth-child(4) {
+				&::after {
+					@include max(991px) {
+						transform: rotate(-90deg) translate(45px, -45px);
+					}
+
+					@include max(425px) {
+						transform: rotate(-90deg) translate(45px, -36px);
+					}
 				}
 			}
 
@@ -179,9 +302,7 @@
 
 			&:nth-last-child(1) {
 				right: 0;
-				@include max(991px) {
-					right: 30px;
-				}
+
 				&::after {
 					top: -80px;
 					content: "$215,000";

@@ -1,9 +1,16 @@
 .featured {
-	margin-top: 160px;
+	margin-top: 90px;
 	padding: 90px 0px;
-
+	padding-bottom: 60px;
 	@include max(1200px) {
 		margin: 0px;
+	}
+
+	&-content {
+		padding: 0px 30px;
+		@include max(1340px) {
+			padding: 0px;
+		}
 	}
 
 	&-title {
