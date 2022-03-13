@@ -10,16 +10,16 @@
 
 	&-wrapper {
 		.output {
+			margin: 0px;
 			color: $blue-e0;
 			font-size: 18px;
 			line-height: 27px;
-			margin-bottom: 8px;
 		}
 	}
 
 	&-minmax {
 		display: flex;
-		margin-top: 8px;
+		margin-top: 2px;
 		align-items: center;
 		justify-content: space-between;
 		span {
@@ -30,18 +30,18 @@
 }
 
 .noUi-horizontal {
-	height: 18px;
+	height: 12px;
 	border: 0px;
 	border-radius: 8px;
 	background-color: #e1e1e1;
 
 	.noUi-handle {
-		top: calc(50% - 3px);
-		right: -14px;
-		width: 24px;
-		height: 24px;
+		top: calc(50% - 1px);
+		right: -6px;
+		width: 14px;
+		height: 14px;
 		border-radius: 50%;
-		border: 6px solid $blue-e0;
+		border: 3px solid $blue-e0;
 
 		&::after,
 		&::before {
@@ -56,7 +56,3 @@
 	border-radius: 8px;
 	background-color: $blue-e0;
 }
-
-// .noUi-handle-lower {
-// 	display: none;
-// }
