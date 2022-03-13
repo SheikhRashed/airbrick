@@ -96,7 +96,16 @@ var tokenOption = {
 		colors: ["#848494", "#1C4861", "#357C9C", "#045A7C"],
 	},
 
-	legend: false,
+	legend: {
+		formatter: function(val, opts) {
+		  return val + " - " + opts.w.globals.series[opts.seriesIndex]
+		},
+		horizontalAlign: 'center', 
+		floating: false,
+		position: 'top',
+	},
+
+
 	chart: {
 		type: "donut",
 	},
@@ -111,7 +120,15 @@ var profitOption = {
 		colors: ["#2E3C4C", "#0CA8DB", "#1C4861"],
 	},
 
-	legend: false,
+	legend: {
+		formatter: function(val, opts) {
+		  return val + " - " + opts.w.globals.series[opts.seriesIndex]
+		},
+		horizontalAlign: 'center', 
+		floating: false,
+		position: 'top',
+	},
+
 	chart: {
 		type: "donut",
 	},

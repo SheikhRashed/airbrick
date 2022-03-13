@@ -6,11 +6,6 @@ header {
 	z-index: 999;
 	background-color: $blue-27;
 	.navbar {
-		padding: 30px 0px;
-		padding-bottom: 12px;
-		@include max(991px) {
-			padding: 12px 0px;
-		}
 		&-toggler {
 			background-color: #fff;
 		}
@@ -67,6 +62,7 @@ header {
 				transition: all 0.3 ease-in;
 				background-color: $blue-e0;
 				border: 1px solid transparent;
+				&.active,
 				&:hover {
 					border-color: #ffff;
 					background-color: $blue-27;

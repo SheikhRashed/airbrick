@@ -1,14 +1,11 @@
 .banner {
 	z-index: 1;
-	height: 870px;
-	margin-top: 120px;
+	min-height: calc(100vh - 98px);
+	margin-top: 98px;
 	position: relative;
-	@include max(767px) {
-		height: 100%;
-	}
 	@include max(991px) {
 		height: 100%;
-		margin-top: 100px;
+		margin-top: 98px;
 	}
 	&::before {
 		content: "";
