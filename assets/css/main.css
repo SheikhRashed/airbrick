@@ -342,7 +342,7 @@ header .navbar .nav-link:hover::before, header .navbar .nav-link.active::before 
 
 header .navbar .nav-btn {
   width: 140px;
-  height: 50px;
+  height: 30px;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -1894,5 +1894,29 @@ header .navbar .nav-btn--sm {
   .timeline-card:nth-child(2) .timeline-btn::before, .timeline-card:nth-child(4) .timeline-btn::before, .timeline-card:nth-child(6) .timeline-btn::before {
     bottom: -40px;
   }
+}
+
+.timeline-card:nth-child(1) .timeline-btn {
+  background-color: #97d9ef;
+}
+
+.timeline-card:nth-child(2) .timeline-btn {
+  background-color: #8dcee3;
+}
+
+.timeline-card:nth-child(3) .timeline-btn {
+  background-color: #96dff6;
+}
+
+.timeline-card:nth-child(4) .timeline-btn {
+  background-color: #70dcff;
+}
+
+.timeline-card:nth-child(5) .timeline-btn {
+  background-color: #0ca8db;
+}
+
+.timeline-card:nth-child(6) .timeline-btn {
+  background-color: #2e3c4c;
 }
 /*# sourceMappingURL=main.css.map */

@@ -183,5 +183,37 @@
 				}
 			}
 		}
+
+		// Buttons color
+		&:nth-child(1) {
+			.timeline-btn {
+				background-color: #97d9ef;
+			}
+		}
+		&:nth-child(2) {
+			.timeline-btn {
+				background-color: #8dcee3;
+			}
+		}
+		&:nth-child(3) {
+			.timeline-btn {
+				background-color: #96dff6;
+			}
+		}
+		&:nth-child(4) {
+			.timeline-btn {
+				background-color: #70dcff;
+			}
+		}
+		&:nth-child(5) {
+			.timeline-btn {
+				background-color: #0ca8db;
+			}
+		}
+		&:nth-child(6) {
+			.timeline-btn {
+				background-color: #2e3c4c;
+			}
+		}
 	}
 }
