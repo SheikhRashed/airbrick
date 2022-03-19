@@ -1233,6 +1233,12 @@ header .navbar .nav-btn--sm {
   }
 }
 
+@media (max-width: 380px) {
+  .callto-content .btn {
+    width: 100%;
+  }
+}
+
 .callto-content .btn:hover {
   background-color: #0dace0;
 }
