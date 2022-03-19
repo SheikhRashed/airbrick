@@ -7,6 +7,7 @@ AOS.init({
 	easing: "ease",
 	once: true,
 	mirror: false,
+	disable: "mobile",
 	anchorPlacement: "top-bottom",
 })
 
@@ -87,34 +88,30 @@ window.addEventListener("scroll", () => {
 	}
 })
 
-
 // chart start
 {
-	const ctx = document.getElementById('tokenChart');
+	const ctx = document.getElementById("tokenChart")
 	const myChart = new Chart(ctx, {
-		type: 'doughnut',
+		type: "doughnut",
 		data: {
-			labels: ['TOKEN SALES', 'AIRBRICK TEAM', 'LIQUIDITY', 'MARKETING & ADVISORS'],
-			datasets: [{
-				label: '# of Votes',
-				data: [65, 20, 5, 10],
-				backgroundColor: [
-					'#045A7C',
-					'#848494',
-					'#1C4861',
-					'#357C9C',
-				],
-				borderWidth: 0
-			}]
+			labels: ["TOKEN SALES", "AIRBRICK TEAM", "LIQUIDITY", "MARKETING & ADVISORS"],
+			datasets: [
+				{
+					label: "# of Votes",
+					data: [65, 20, 5, 10],
+					backgroundColor: ["#045A7C", "#848494", "#1C4861", "#357C9C"],
+					borderWidth: 0,
+				},
+			],
 		},
 		options: {
 			scales: {
 				y: {
-					beginAtZero: true
-				}
+					beginAtZero: true,
+				},
 			},
 			layout: {
-				padding: 100
+				padding: 100,
 			},
 			responsive: true,
 			maintainAspectRatio: true,
@@ -122,47 +119,46 @@ window.addEventListener("scroll", () => {
 				display: false,
 			},
 			pieceLabel: {
-				render: function(d) { return  d.percentage + "% " + d.label  },
-				fontColor: '#3D3C3C',
+				render: function (d) {
+					return d.percentage + "% " + d.label
+				},
+				fontColor: "#3D3C3C",
 				fontSize: 14,
-				fontFamily: 'Poppins',
-				fontStyle: 'bold',
-				position: 'outside',
+				fontFamily: "Poppins",
+				fontStyle: "bold",
+				position: "outside",
 				segment: true,
-				segmentColor: '#F6CD9D'
-			}
-		}
-	});
-		 
+				segmentColor: "#F6CD9D",
+			},
+		},
+	})
 }
 
 // chart 2
 {
-	const ctx = document.getElementById('profitChart');
-	
+	const ctx = document.getElementById("profitChart")
+
 	const myChart = new Chart(ctx, {
-		type: 'doughnut',
+		type: "doughnut",
 		data: {
-			labels: ['AIRBRICK TREASURE', 'INVESTORS', 'AIRBRICK FINANCE'],
-			datasets: [{
-				label: '# of Votes',
-				data: [20, 40, 40],
-				backgroundColor: [
-					'#0CA8DB',
-					'#1C4861',
-					'#2E3C4C',
-				],
-				borderWidth: 0
-			}]
+			labels: ["AIRBRICK TREASURE", "INVESTORS", "AIRBRICK FINANCE"],
+			datasets: [
+				{
+					label: "# of Votes",
+					data: [20, 40, 40],
+					backgroundColor: ["#0CA8DB", "#1C4861", "#2E3C4C"],
+					borderWidth: 0,
+				},
+			],
 		},
 		options: {
 			scales: {
 				y: {
-					beginAtZero: true
-				}
+					beginAtZero: true,
+				},
 			},
 			layout: {
-				padding: 100
+				padding: 100,
 			},
 			responsive: true,
 			maintainAspectRatio: true,
@@ -170,18 +166,19 @@ window.addEventListener("scroll", () => {
 				display: false,
 			},
 			pieceLabel: {
-				render: function(d) { return  d.percentage + "% " + d.label  },
-				fontColor: '#3D3C3C',
+				render: function (d) {
+					return d.percentage + "% " + d.label
+				},
+				fontColor: "#3D3C3C",
 				fontSize: 14,
-				fontFamily: 'Poppins',
-				fontStyle: 'bold',
-				position: 'outside',
+				fontFamily: "Poppins",
+				fontStyle: "bold",
+				position: "outside",
 				segment: true,
-				segmentColor: '#F6CD9D'
-			}
-		}
-	});
-		 
+				segmentColor: "#F6CD9D",
+			},
+		},
+	})
 }
 // chart end
 
@@ -210,4 +207,16 @@ var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 4,
 		},
 	},
+})
+
+var blogCard = new Swiper(".blog-card__slider", {
+	loop: true,
+	slidesPerView: "auto",
+	spaceBetween: 20,
+	// centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	loopFillGroupWithBlank: true,
 })
